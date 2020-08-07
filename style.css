@@ -16,7 +16,7 @@ header{
     position: fixed;
     top: 0;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
 }
 nav{
     height: 100%;
@@ -86,19 +86,9 @@ a,a:hover{
     padding-left: 3px;
 
 }
-.item-6{
+/* .item-6{
     width: 30%;
-}
-.form{
-    border: 1px solid gray;
-    border-radius: 2px;
-    padding-left: 5px;
-    width: 100%;
-}
-.search-bar,.search-bar:focus{
-    border: none;
-    outline: none;
-}
+} */
 .search{
     display: none;
     /* left: 50px; */
@@ -115,9 +105,9 @@ a,a:hover{
     
     .item-6{
         margin-left: 200px;
-        width: 15px;
+        /* width: 15px; */
     }
-    .form{
+    .search-box{
         display: none;
         position: static;
     }
@@ -134,13 +124,13 @@ a,a:hover{
     }
     .item-6{
         margin-left: 100px;
-        width: 15px;
+        /* width: 15px; */
     }
 }
 
 /* section-2 */
 
-section{
+.sec-two{
     margin-top: 35px;
     /* border: 5px solid cyan; */
     background-image: url(https://cdn.sstatic.net/Img/home/illo-hero-full.svg?v=e2018a5f9272);
@@ -150,50 +140,6 @@ section{
     background-color: #FFCF10;
     background-repeat: no-repeat;
     height: 480px;
-}
-@media (max-width: 640px){
-    section{
-        background-image: url("https://cdn.sstatic.net/Img/home/illo-hero-small.svg?v=884735d21ea5");
-    }
-    .high-light h1{
-        font-size: 33px;
-        font-family: 'Roboto Slab Bold',serif;
-        font-weight: 700;
-        /* width: 90%; */
-        margin-bottom: 25px;
-    }
-    .dev-business{
-        display: flex;
-        flex-direction: column;
-        
-        /* justify-content: center;*/
-        align-items: center;
-        /* text-align: center;  */
-    }
-    .dev-business a{
-        margin-bottom: 10px;
-    }
-    .description{
-        margin-right: 40px;
-    }
-    .description p{
-        /* margin-top: 55px; */
-        width: 85%;
-        text-align: center;
-        font-size: 19px;
-        margin-bottom: 22px;
-    }
-    /* section-3 */
-    .community p{
-        font-size: 15px !important;
-        width: 460px !important;
-    }
-    @media (max-width: 505px){
-        .community p{
-            /* font-size: 15px !important; */
-            width: 455px !important;
-        }
-    }
 }
 .sec-two{
     display: flex;
@@ -253,7 +199,8 @@ section{
     margin: 0 auto;
     /* text-align: center; */
 }
-.community h2, .community h5{
+.community .line, .community h4, .community h3{
+    font-family: 'Roboto Slab Bold',serif;
     margin-bottom: 25px;
 }
 .open-community, .open-community:hover{
@@ -261,29 +208,13 @@ section{
     /* cursor: pointer; */
     text-decoration: none;
 }
-/* card container */
-@media (max-width: 816px){
-    article .card-system{
-        transform: translateY(-9%);
-        display: flex;
-        position: static;
-        flex-flow: column;
-    }
-    article .card-system .card{
-        width: 330px;
-        height: 380px;
-        font-size: 82%;
-    }
-    .card-system .card-2{
-        transform: translateY(20%);
-    }
-}
-article .card-system{
+
+section .card-system{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-article .card-system .card-1, article .card-system .card-3{
+section .card-system .card-1, section .card-system .card-3{
     /* margin-top: 105px; */
     transform: translateY(20%);
 }
@@ -293,13 +224,13 @@ article .card-system .card-1, article .card-system .card-3{
     margin: 15px;
     padding: 15px;
     /* border: 2px solid chartreuse; */
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 1px 1px 4px gray;
     border-radius: 8px;
     font-size: 78%;
     text-align: center;
 }
 .card-1:hover, .card-2:hover,.card-3:hover{
-    box-shadow: 1px 1px 8px gray;
+    box-shadow: 1px 1px 7px gray;
     /* transition: transform 1.5s; */
 }
 .card-img{
@@ -334,4 +265,398 @@ article .card-system .card-1, article .card-system .card-3{
 .card-btn a{
     color: white;
     /* margin: 25px auto; */
+}
+.sec-three{
+    margin-bottom: 140px;
+}
+@media (max-width: 640px){
+    .sec-two{
+        background-image: url("https://cdn.sstatic.net/Img/home/illo-hero-small.svg?v=884735d21ea5");
+    }
+    .high-light h1{
+        font-size: 33px;
+        font-family: 'Roboto Slab Bold',serif;
+        font-weight: 700;
+        /* width: 90%; */
+        margin-bottom: 25px;
+    }
+    .dev-business{
+        display: flex;
+        flex-direction: column;
+        
+        /* justify-content: center;*/
+        align-items: center;
+        /* text-align: center;  */
+    }
+    .dev-business a{
+        margin-bottom: 10px;
+    }
+    .description{
+        margin-right: 40px;
+    }
+    .description p{
+        /* margin-top: 55px; */
+        width: 85%;
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 22px;
+    }
+    /* section-3 */
+    .community p{
+        font-size: 15px !important;
+        width: 460px !important;
+    }
+    .community h3{
+        font-size: 28px !important;
+    }
+    .sec-five .community p{
+        font-size: 16px !important;
+        width: 400px !important;
+    }
+    /* section-4 */
+    .community .business-developer{
+        width: 420px !important;
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .community .business-developer{
+        width: 90% !important;
+        font-size: 14px !important;
+    }
+    @media (max-width: 505px){
+        .community p{
+            /* font-size: 15px !important; */
+            width: 455px !important;
+        }
+        .community .business-developer{
+            width: 420px !important;
+            font-size: 14px !important;
+        }
+        .community h3{
+            font-size: 28px !important;
+        }
+    }
+
+    
+}
+/* section-4 */
+.sec-four{
+    background-color: #F7F6F9;
+    padding-bottom: 80px;
+}
+.community .business-developer{
+    width: 640px;
+    font-size: 17px;
+}
+.card2-deck{
+    margin: auto 100px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.card2{
+    background-color: white;
+    width: 380px;
+    height: 200px;
+    margin: 20px;
+    font-size: 17px;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 10px;
+    padding: 32px !important;
+}
+@media (max-width: 1100px){
+    .card2{
+        width: 310px !important;
+        height: 310px;
+        flex-direction: column;
+        font-size: 14px !important;
+    }
+}
+.card2 img{
+    width: 80px;
+    margin-left: 5px;
+}
+.card2 p{
+    margin-left: 5px;
+    /* margin-right: 5px; */
+    /* font-size: 10px; */
+    margin-top: 25px;
+}
+/* card container setting up */
+
+/* section-5 */
+#sec-five{
+    background-color: #2B2D6E;
+    /* height: 780px; */
+    padding-bottom: 50px;
+}
+.sec-five{
+    color: white;
+    margin-bottom: 20px;
+}
+.sec-five .community{
+    /* padding: 50px; */
+    margin: 0 auto;
+    width: 500px;
+    height: fit-content;
+    /* border: 2px solid white; */
+    
+}
+.sec-five h3{
+    font-weight: bold;
+}
+.sec-five p{
+    width: 90%;
+    margin-bottom: 25px;
+}
+#learn-more{
+    width: 110px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #F48024;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#learn-more a{
+    color: white;
+    padding: 5px;
+}
+.card3-deck{
+    background-image: url("https://cdn.sstatic.net/Img/product/teams/illo-teams-pricing.svg?v=8afb8ac7c580");
+    background-repeat: no-repeat;
+    background-size: 1230px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+@media (max-width: 1066px){
+    /* background-size: ; */
+    .card3-deck{
+        background-size: 84%;
+    }
+}
+.top-most{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 0 15px;
+    /* margin: 8px; */
+    background-color: #E4E6E8;
+    width: 250px;
+    position: absolute;
+    transform: translate(15%,-68%);
+    border-radius: 5px;
+    z-index: 0 !important;
+}
+.card3{
+    /* width: 304px; */
+    width: 304px;
+    /* height: 552px;  */
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    outline: none;
+    z-index: 2 !important; 
+}
+.card3 p, .card3 .icon-details{
+    font-size: 13.5px;
+}
+.icons .icon-details{
+    margin-left: 10px;
+}
+.icons div{
+    display: flex;
+    flex-flow: row;
+}
+.card3 .btn1, .card3 .btn2, .card3 .btn3{
+    /* border: 2px solid blueviolet; */
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.card3 .btn2 a, .card3 .btn3 a{
+    color: white;
+}
+.card3 .btn1{
+    background-color: #C8CCD0;
+    margin-top: 113px;
+}
+.card3 #h6-1{
+    background-color: #C8CCD0;
+    /* color: #3e4656; */
+    width: 70px;
+    height: 28px;
+    padding-left: 12px;
+    border-radius: 5px;
+}
+.card3 .btn2{
+    background-color: #3C4146;
+    margin-top: 60px;
+    /* width: fit-content; */
+     
+}
+.card3 #h6-2{
+    background-color: #3C4146;
+    color: white;
+    width: 90px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.card3 .btn3{
+    background-color: #2B2D6E;
+}
+.card3 .btn1:hover, .card3 .btn2:hover, .card3 .btn3:hover{
+    background-color: #0095FF;
+}
+.card3 #h6-3{
+    background-color: #2B2D6E;
+    color: white;
+    width: 105px;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+/* 940px screen er por theke section-5 er footer er management korte hobe... */
+.sec-footer{
+    margin: 75px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+    flex-direction: row;
+}
+.sec-footer div{
+    margin: 0 10px;
+
+}
+.sec-footer a .info{
+    /* margin-left: 5px; */
+    padding: 2px;
+    /* font-size: 10px; */
+}
+.sec-footer a{
+    font-weight: bold;
+    color: #BBC0C4;
+    /* padding: 200px; */
+}
+@media (max-width: 629px){
+    .sec-footer a .info{
+        font-size: 10.1px;
+    }
+}
+.sec-footer a:hover{
+    font-weight: bold;
+    color: lightyellow;
+}
+@media (max-width: 940px){
+    .sec-footer{
+        display: grid !important;
+        grid-row-gap: 15px;
+        grid-template-columns: 33% 33%;
+        justify-items: center;
+    }
+    .sec-footer .a-3{
+        grid-column: 1/span 2;
+    }
+}
+@media (max-width: 1064px){
+    .card3-deck{
+        margin: 0 auto !important;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 5px;
+        grid-template-columns: 33% 33%;
+    }
+    .card3{
+        width: 95%;
+    }
+    .top-most{
+        width: 26%;
+    }
+    .card3-3{
+        width: 199%;
+    }
+    .card3 .btn3{
+        margin-top: 60px;
+    }
+    
+    
+}
+@media (max-width:721px){
+    .card3-deck{
+        display: grid !important;
+        grid-column-gap: 10px;
+        grid-template-columns: 33%;
+        /* flex-flow: column; */
+        /* justify-content: center; */
+        justify-items: center;
+    }
+    .card3{
+        width: 404px;
+    }
+    .top-most{
+        width: 325px;
+    }
+}
+@media (max-width: 816px){
+    /* sec-3 */
+    section .card-system{
+        transform: translateY(-9%);
+        display: flex;
+        position: static;
+        flex-flow: column;
+    }
+    section .card-system .card{
+        width: 330px;
+        height: 380px;
+        font-size: 82%;
+    }
+    .card-system .card-2{
+        transform: translateY(20%);
+    }
+    .sec-three{
+        margin-bottom: 40px;
+    }
+    /* sec-4 */
+    .card2-deck{
+        margin: auto 100px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card2{
+        width: 350px !important;
+        height: 180px;
+        font-size: 18px !important;
+        /* margin: 20px;
+         */
+        /* text-align: center; */
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* section-5 card management*/
+    .card3-2{
+        grid-row: 1/span 1 !important;
+    }
 }
