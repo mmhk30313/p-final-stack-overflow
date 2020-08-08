@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Overflow - Where Developers Learn, Share & Build Careers</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/stackoverflow.png" type="image/x-icon"> -->
+    <script src="https://kit.fontawesome.com/b0dd5ab409.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* .search-box{
+            display: flex;
+            flex-flow: row;
+            
+        } */
+        .search-box{
+            transform: translateY(-15%);
+        }
+        .search-box input{
+            height: 35px;
+            padding-left: 30px;
+            width: 100%;
+        }
+        .search-icon{
+            transform: translate(150%, 20%);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="item-1"><a href="#">&#9776;</a></div>
+            <div class="item-2"><a href="#"><img src="https://img.icons8.com/color/48/000000/stackoverflow.png" style="height: 28px;width: 30px;"><span class="stack-overflow">stack <span style="font-weight: bold;">overflow</span></span></a></div>
+            <div class="item-3"><a href="#">Products</a></div>
+            <div class="item-4"><a href="#">Customers</a></div>
+            <div class="item-5"><a href="#">Use cases</a></div>
+            <div class="item-6">
+                <div class="search-box">
+                    <a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+                    <input class="form-control" type="text" placeholder="search..." style="font-size: 15px;">
+                </div>
+                <a id="search" class="search" href="#"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="item-7"><button class="btn btn-light"><span id="btn1">Log in</span></button></div>
+            <div class="item-8"><button class="btn btn-primary"><span id="btn2">Sign up</span></button></div>
+       </nav>
+    </header>
+    <section class="sec-two">
+        <div class="high-light">
+            <h1>We <3 people who code</h1>
+                <!-- <br> -->
+            <div class="description">
+                <p>We build products that empower developers and connect them to solutions that enable productivity, growth, and discovery.</p>
+            </div>
+            <div class="dev-business">
+                <a id="dev" href="#">For developers</a>
+                <a id="business" href="#">For businesses</a>
+            </div>
+        </div>
+    </section>
+    <section class="sec-three">
+        <div class="community">
+            <h4>For developers, by developers</h4>
+            <h1 class="line"></h1>
+            <p>Stack Overflow is an <a href="#" class="open-community">open community</a> for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your coworkers in private, and find your next dream job.</p>
+        </div>
+        <div class="card-system">
+            <div class="card card-1">
+                <div class="card-img">
+                    <img src="https://cdn.sstatic.net/Img/home/public-qa.svg?v=d82acaa7df9f" alt="">
+                </div>
+                <h4>Public Q&A</h4>
+                <div class="card-text">
+                    <p>Get answers to more than 16.5 million questions and give back by sharing your knowledge with others.<a href="#">Sign up</a>  for an account.</p>
+                </div>
+                <div class="card-btn btn-1">
+                    <a href="#">Browse questions</a>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-img">
+                    <img src="https://cdn.sstatic.net/Img/home/private-qa.svg?v=2c1de180b6d7" alt="">
+                </div>
+                <h4>Private Q&A</h4>
+                <div class="card-text">
+                    <p>Level up with Stack Overflow while you work. Share knowledge privately with your coworkers using our flagship Q&A engine.</p>
+                </div>
+                <div class="card-btn btn-2">
+                    <a href="#">Try for free</a>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-img">
+                    <img src="https://cdn.sstatic.net/Img/home/jobs.svg?v=931d6c0863ee" alt="">
+                </div>
+                <h4>Browse jobs</h4>
+                <div class="card-text">
+                    <p>Find the right job through high quality listings and search for roles based on title, technology stack, salary, location, and more.</p>
+                </div>
+                <div class="card-btn btn-3">
+                    <a href="#">Find a job</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-four">
+        <div class="community">
+            <h3>For businesses, by developers
+            </h3>
+            <h1 class="line"></h1>
+            <p class="business-developer">Our mission is to help developers write the script of the future. This means helping you find and hire skilled developers for your business and providing them the tools they need to share knowledge and work effectively.
+            </p>
+        </div>
+        <div class="card2-deck">
+            <div class="card2 card2-1">
+                <img src="https://cdn.sstatic.net/Img/home/private-questions.svg?v=a4f1cfb08f7e" alt="">
+                <p>Quickly find and share internal knowledge with <a class="open-community" href="#">Private Q&A</a></p>
+            </div>
+            <div class="card2 card2-2">
+                <img src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3" alt="">
+                <p>Find the perfect candidate for your growing technical team with <a class="open-community" href="#">Talent solutions</a></p>
+            </div>
+            <div class="card2 card2-3">
+                <img src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02" alt="">
+                <p>Accelerate the discovery of your products or services through our <a class="open-community" href="#">Advertising platform</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="sec-five">
+        <article class="sec-five">
+            <div class="community">
+                <h3>Unlock siloed knowledge with Stack Overflow for Teams
+                </h3>
+                <p class="knowledge">Wikis, chat messages, or formal documentation for knowledge management aren’t effective. Our question and answer format is a proven approach for accessing the right information in less time.
+                </p>
+                <div id="learn-more">
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </article>
+        <div class="card3-deck">
+            <div class="card3 card3-1">
+                <h6 id="h6-1">Basic</h6>
+                <p>Private knowledge base for teams</p><br>
+                <h3>$6 USD</h3>
+                <p style="color: #9199A9;">per teammate / month</p>
+                <hr>
+                <div class="icons">
+                    <div><i class="far fa-calendar-alt icon"></i> <p class="icon-details">Free 30 day trial</p></div>
+                    <div><i class="fas fa-user-shield icon"></i> <p class="icon-details">Your own private space hosted on stackoverflow.com</p></div>
+                    <div><i class="fas fa-archive icon"></i> <p class="icon-details">Fully searchable archive</p></div>
+                </div>
+                <div class="btn1"><a href="#" class="first-btn">Get started for free</a></div>
+                
+            </div>
+            <div class="card3-2">
+                <div class="top-most">
+                    <div><strong>MOST USED</strong></div>
+                    <div><i class="fas fa-industry"></i></div>
+                </div>
+                <div class="card3">
+                    <h6 id="h6-2">Business</h6>
+                    <p>Private knowledge base with SSO and premium features</p>
+                    <h3>$12 USD</h3>
+                    <p style="color: #9199A9;">per teammate / month</p>
+                    <hr>
+                    <div class="icons">
+                        <div><i class="fas fa-key icon"></i><p class="icon-details">Single sign-on (SSO) with SAML</p></div>
+                        <div><i class="far fa-chart-bar icon"></i><p class="icon-details">Reporting and analytics</p></div>
+                        <div><i class="fas fa-laptop-medical icon"></i><p class="icon-details">Priority customer support</p></div>
+                        <div><i class="fas fa-star icon"></i></i><p class="icon-details">99.5% uptime</p></div>
+                        <div style="color: #9199A9;"><i class="fas fa-plus icon"></i><p class="icon-details">All the features of Basic tier</p></div>
+                    </div>
+                    <div class="btn2"><a href="#" class="second-btn">Get started</a></div>
+                </div>
+            </div>
+            <div class="card3 card3-3">
+                <h6 id="h6-3">Enterprise</h6>
+                <p>Standalone knowledge base with enhanced security and flexible hosting</p>
+                <h3>Custom pricing</h3>
+                <p style="color: #9199A9;">Let’s talk about what you need</p>
+                <hr>
+                <div class="icons">
+                    <div><i class="fas fa-key icon"></i><p class="icon-details icon">Single sign-on with AD or SAML</p></div>
+                    <div><i class='fab fa-atlassian'></i><p class="icon-details icon">Host on your cloud or servers – or our private managed cloud</p></div>
+                    <div><i class="fas fa-code"></i><p class="icon-details icon">Robust read and write API</p></div>
+                    <div><i class="fas fa-user"></i><p class="icon-details icon">Your own customer success and community building representative</p></div>
+                    <div><i class="fas fa-star icon"></i><p class="icon-details">99.5% uptime SLA and priority support</p></div>
+                </div>
+                <div class="btn3"><a href="#" class="second-btn">Request a demo</a></div>
+            </div>
+        </div>
+        <div class="sec-footer">
+            <div><a href="#"><img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910" alt=""><span class="info">  Leader Summer 2020</span></a></div>
+            <div class="a-2"><a href="#"><img src="https://cdn.sstatic.net/Img/product/teams/endorsements/g2.svg?v=670bf9279910" alt=""><span class="info"> Users Love Us</span> </a></div>
+            <div class="a-3"><a href="#"><img src="https://cdn.sstatic.net/Img/product/teams/endorsements/fastco.svg?v=5ebc802a76c7" alt=""><span class="info"> Most Innovative Companies 2019</span></a></div>
+        </div>
+    </section>
+    
+    <section class="sec-six">
+        <div class="sec-6">
+            <div class="card4 card4-1">
+                <div class="img4"><img src="https://cdn.sstatic.net/Img/home/find-candidate.svg?v=9099aa106ad3"></div>
+                <h5 style="font-weight: bold;">Hire your technical talent</h5>
+                <p>We help expand your technical hiring strategy to promote your employer brand and highlight relevant open roles to our community of 50 million monthly visitors.</p>
+                <a href="#" class="btn6">Stack Overflow Talent</a>
+            </div>
+            <div class="card4 card4-2">
+                <div class="img4"><img src="https://cdn.sstatic.net/Img/home/accelerate.svg?v=9d4c2786ff02"></div>
+                <h5 style="font-weight: bold;">Reach developers worldwide</h5>
+                <p>Use the world’s largest resource for people who code to help you increase awareness and showcase your product or service across Stack Overflow’s network of Q&A sites.</p>
+                <a href="#" class="btn6">Stack Overflow Advertising</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
